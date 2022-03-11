@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+input, button, textarea, select {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'AkzidenzGroteskPro-Ext';
+    font-weight: 400;
+    color: var(--black);
+    overflow-x: hidden;
+    @include normal_font;
+}
+
+//HELPERS
+
+.main {
+    
+}
+
+.section__title {
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 87px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section__title.black {
+    color: var(--black);
+}
+
+.section__title.blue {
+    color: var(--blue);
+}
+
+.section__title.white {
+    color: #fff;
+}

@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'AkzidenzGroteskPro-Ext';
+	src: url('../fonts/akzidenzgroteskpro-ext.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/akzidenzgroteskpro-ext.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/akzidenzgroteskpro-ext.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/akzidenzgroteskpro-ext.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/akzidenzgroteskpro-ext.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/akzidenzgroteskpro-ext.svg#akzidenzgroteskpro-ext') format('svg'); /* Chrome < 4, Legacy iOS */
+}

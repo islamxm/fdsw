@@ -1,0 +1,33 @@
+//COLORS
+:root {
+    --black: #1F1F1F;
+    --blue: #3F5076;
+    --gray: #232323;
+    --gold: #B59C67;
+}
+
+//MIXINS
+
+//fonts
+@mixin normal_font {
+    font-size: 23px;    
+    line-height: 38px;
+    font-weight: 400;
+}
+
+@mixin title_font {
+    font-size: 68px;
+    line-height: 87px;
+    font-weight: 400;
+}
+
+@mixin nav_font {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 92px;
+}
+
+//anim
+@mixin def_anim {
+    transition: all .3s ease;
+} 

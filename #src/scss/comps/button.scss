@@ -1,0 +1,70 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 33px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    @include def_anim;
+
+    &:hover {
+        background-color: #fff;
+
+        span {
+            color: var(--blue);
+        }
+
+        .icon {
+            svg {
+                path {
+                    fill: var(--blue);
+                }
+                line {
+                    stroke: var(--blue);
+                }
+                
+            }
+        } 
+    }
+
+    span {
+        display: block;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #fff;
+        @include def_anim;
+        text-transform: uppercase;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            path, line {
+                @include def_anim;
+            }
+        }
+    }
+
+    .icon.icon_left {
+        margin-right: 10px;
+    }
+    .icon.icon_right {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .button {
+        padding: 10px 20px;
+
+        span {
+            font-size: 15px;
+            line-height: 17px;
+        }
+    }
+}

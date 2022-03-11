@@ -1,0 +1,158 @@
+.menu.active {
+    transform: translateX(0%);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    transform: translateX(-100%);
+    transition: all .7s ease-in-out;
+
+
+    &__nav {
+        padding-top: 50px;
+        padding-left: 100px;
+        height: 100%;
+        position: relative;
+
+        &_soc {
+            display: none;
+        }
+
+        &_vd {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            width: 313px;
+            height: 191px;
+
+
+            &_pl {
+                width: 100%;
+                height: 100%;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &_list {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        &_item.p-0 {
+            padding-left: 0;
+        }
+
+        &_item.p-20 {
+            padding-left: 20%;
+        }
+
+        &_item.p-40 {
+            padding-left: 40%;
+        }
+
+        &_item {
+            margin-bottom: 50px;
+            
+            a {
+                font-weight: 400;
+                font-size: 72px;
+                line-height: 92px;
+                color: #fff;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .menu.active {
+        
+    }
+    .menu {
+        width: 60%;
+        z-index: 9;
+        position: fixed;
+
+        &__nav {
+            padding: 25px;
+            padding-top: 125px;
+
+            &_soc {
+                display: block;
+
+                &_item {
+                    display: block;
+                    margin-bottom: 25px;
+
+                    width: 37px;
+                    height: 37px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;   
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &_vd {
+                display: none;
+            }
+
+            &_list {
+                height: auto;
+                margin-bottom: 35px;
+            }
+            &_item {
+                margin-bottom: 0;
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+
+            &_item.p-0 {
+                padding-left: 0;
+            }
+
+            &_item.p-20 {
+                padding-left: 0;
+            }
+
+            &_item.p-40 {
+                padding-left: 0;
+            }
+
+           
+        }
+
+        
+    }
+}
+
+
+@media (max-width: 550px) {
+    .menu {
+        width: 100%;
+    }
+}
