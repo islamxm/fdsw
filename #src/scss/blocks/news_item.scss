@@ -15,7 +15,6 @@
 
     &__body {
         width: 65%;
-        border: 1px solid red;
 
 
         &_text {
@@ -118,6 +117,113 @@
                     font-size: 16px;
                     line-height: 26px;
                     
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .news_item {
+
+
+        &__in {
+            flex-direction: column;
+        }
+        &__body {
+            width: 100%;
+
+            
+        }
+        &__aside {
+            width: 100%;
+
+            
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .news_item {
+
+        &__body {
+            margin-bottom: 30px;
+
+            &_text {
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 23px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &_qt {
+                font-size: 14px;
+                line-height: 23px;
+            }
+
+            &_title {
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            &_btn {
+                a {
+                    padding: 12px 30px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+
+        &__aside {
+            padding: 20px 25px;
+
+            &_head {
+                font-size: 25px;
+                line-height: 32px;
+                margin-bottom: 30px;
+                padding-bottom: 15px;
+            }
+
+            &_list {
+
+                &_item {
+                    margin-bottom: 25px;
+                    a {
+
+                    }
+
+                    &_date {
+                        font-size: 14px;
+                        line-height: 23px;
+                    }
+
+                    &_text {
+                        font-size: 14px;
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
+    .news_item {
+
+        &__body {
+            &_btn {
+                a {
+                    width: 100%;
                 }
             }
         }
