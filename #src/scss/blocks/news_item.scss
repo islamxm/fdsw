@@ -1,0 +1,125 @@
+.news_item {
+
+    &__wrap {
+        max-width: 1300px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__in {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 50px 0;
+    }
+
+    &__body {
+        width: 65%;
+        border: 1px solid red;
+
+
+        &_text {
+            margin-bottom: 40px;
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &_qt {
+            padding-left: 30px;
+            border-left: 7px solid var(--blue);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+
+        &_title {
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 41px;
+            margin-bottom: 20px;
+        }
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            a {
+                padding: 17px 40px;
+                background-color: var(--blue);
+                color: #fff;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__aside {
+        padding: 15px 30px;
+        width: 30%;
+        border: 1px solid #D3D3D3;
+
+
+        &_head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #D3D3D3;
+
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 30px;
+        }
+
+        &_list {
+
+            &_item {
+                padding-bottom: 20px;
+                border-bottom: 1px solid #D3D3D3;
+                margin-bottom: 16px;
+                display: block;
+
+                a {
+                    display: block;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                    border: none;
+                    padding-bottom: 0;
+                }
+
+                &_date {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    margin-bottom: 10px;
+                    color: #848484;
+                }
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    
+                }
+            }
+        }
+    }
+}

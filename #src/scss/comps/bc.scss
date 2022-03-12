@@ -1,0 +1,26 @@
+.bc {
+    padding: 20px 15px;
+    max-width: 1405px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__list {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #848484;
+        display: flex;
+        align-items: center;
+
+        &_item {
+            padding: 0 5px;
+            a {
+                display: block;
+            }
+        }
+
+        &_spacer {
+            padding: 0 5px;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.comp {
+
+    &__wrap {
+        max-width: 1405px;
+        padding: 0 15px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 46px;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+
+    &__list {
+        padding-bottom: 30px;
+        position: relative;
+        &_wr {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+    }
+    &__item {
+        width: calc(100% / 3.665);
+        margin-bottom: 45px;
+
+        &_img {
+
+        }
+
+        &_name {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        &_text {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+
+        &_info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            &_link {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+            }
+        }
+
+        &_auth {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__scrollbar {
+        height: 7px;
+        background-color: #C4C4C4;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .comp {
+
+
+
+        &__list {
+
+            &_wr {
+                flex-wrap: nowrap;
+                justify-content: unset;
+            }
+        }
+
+        &__item {
+            width: unset;
+        }
+
+        &__scrollbar {
+            display: block;
+            border-radius: 15px;
+
+            .swiper-scrollbar-drag {
+                background-color: var(--blue);
+                border-radius: 15px;
+            }
+        }
+    }
+}

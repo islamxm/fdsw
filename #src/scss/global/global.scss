@@ -48,6 +48,22 @@ body {
     text-transform: uppercase;
 }
 
+
+@media (max-width: 1200px) {
+
+    .section__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .section__title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
 .section__title.black {
     color: var(--black);
 }

@@ -1,5 +1,11 @@
 .menu.active {
     transform: translateX(0%);
+
+
+    .menu__nav_item {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .menu {
@@ -30,6 +36,22 @@
             right: 50px;
             width: 313px;
             height: 191px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            &_btn {
+                position: absolute;
+                top: calc(50% - 21px);
+                left: calc(50% - 22px);
+                @include def_anim;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+
 
 
             &_pl {
@@ -48,23 +70,31 @@
             height: 100%;
             display: flex;
             flex-direction: column;
+            overflow-y: auto;
             
         }
 
         &_item.p-0 {
             padding-left: 0;
+            transition-delay: 0.8s;
         }
 
         &_item.p-20 {
             padding-left: 20%;
+            transition-delay: 1s;
         }
 
         &_item.p-40 {
             padding-left: 40%;
+            transition-delay: 1.2s;
         }
 
         &_item {
             margin-bottom: 50px;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: all 1s ease-in-out;
+
             
             a {
                 font-weight: 400;
@@ -72,6 +102,25 @@
                 line-height: 92px;
                 color: #fff;
                 display: block;
+            }
+
+            
+        }
+    }
+}
+
+
+@media (max-width: 1370px) {
+
+    .menu {
+
+        &__nav {
+
+            &_item {
+                a {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
             }
         }
     }
@@ -111,6 +160,8 @@
 
             &_vd {
                 display: none;
+
+                
             }
 
             &_list {
