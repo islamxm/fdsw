@@ -1,0 +1,278 @@
+.feed {
+    
+    
+    &__wrap {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+
+    &__in {
+        
+        padding: 50px 0;
+        
+    }
+
+    &__body {
+        background-image: url('../img/contacts/contacts-bg.png');
+        background-size: 70.5% 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+
+        &_form {
+            padding-bottom: 50px;
+
+            &_title {
+                color: var(--black);
+                font-size: 25px;
+                line-height: 40px;
+                font-weight: 400;
+                width: 40%;
+                margin-bottom: 160px;
+
+                .st {
+                    font-weight: 700 !important;
+                    display: block;
+                }
+
+                .wh {
+                    color: #fff;
+                }
+            }
+
+            &_row {
+                display: flex;
+                align-items: center;
+                
+                padding-bottom: 30px;
+
+                &_fields {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 60%;
+
+                    input {
+                        padding: 15px;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 33px;
+
+                        &:first-child {
+                            
+                            width: 45%;
+                            color: var(--black);
+                            border-bottom: 1px solid #848484;
+
+                            &::placeholder {
+                                color: #848484;
+                            }
+                        }
+
+                        &:last-child {
+                            
+                            width: 45%;
+                            color: #fff;
+                            border-bottom: 1px solid #D3D3D3;
+
+                            &::placeholder {
+                                color: #D3D3D3;
+                            }
+                        }
+                    }
+                }
+
+                &_ch {
+                    display: none;
+                }
+
+                &_btn {
+                    margin-left: 120px;
+                    button {
+                        padding: 17px 83px;
+                        background-color: var(--blue);
+                        color: #fff;
+                    }
+                }
+            }
+
+            &_ex {
+                width: 30%;
+                &_check {
+
+                    input {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        pointer-events: none;
+
+                    }
+
+                    label {
+                        display: flex;
+                        align-items: flex-start;
+                        cursor: pointer;
+
+                        .icon {
+                            width: 12px;
+                            height: 12px;
+                            border: 1px solid #cdcdcd;
+                            margin-right: 10px;
+                            flex: 0 0 auto;
+                        }
+
+                        .text {
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #000;
+                        }
+                    }
+
+                    input:checked ~ label {
+
+                        .icon {
+                            background-color: var(--blue);
+                            border-color: var(--blue);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .feed {
+
+        
+
+        &__wrap {
+            padding: 0;
+        }
+
+        &__in {
+            padding: 0;
+        }
+
+        &__body {
+            background-size: 100% 100%;
+            padding: 25px;
+
+            &_form {
+                padding-bottom: 0;
+
+                &_title {
+                    color: #fff !important;
+                    margin-bottom: 25px;
+                }
+
+                &_row {
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    &_fields {
+                        width: 100%;
+                        flex-wrap: wrap;
+
+                        input {
+                            width: 100% !important;
+                            margin-bottom: 25px;
+                            border-bottom-color: #D3D3D3 !important;
+
+                            &::placeholder {
+                                color: #D3D3D3 !important;
+                            }
+                        }
+                    }
+
+                    &_ch {
+                        display: block;
+                        margin-bottom: 30px;
+
+                        input {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            visibility: hidden;
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+
+                        label {
+                            display: flex;
+                            align-items: flex-start;
+
+                            .icon {
+                                width: 12px;
+                                height: 12px;
+                                border: 1px solid #D3D3D3;
+                                margin-right: 10px;
+                            }
+
+                            .text {
+                                color: #fff;
+                                font-weight: 400;
+                                font-size: 13px;
+                                line-height: 16px;
+                            }
+                        }
+
+                        input:checked ~ label {
+
+                            .icon {
+                                background-color: var(--blue);
+                                border-color: var(--blue);
+                            }
+                        }
+                    }
+
+                    &_btn {
+                        width: 100%;
+                        margin-left: 0;
+
+                        button {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &_ex {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .feed {
+
+        &__body {
+
+            &_form {
+                &_title {
+                    width: 100%;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 33px;
+                }
+
+                &_row {
+
+                    &_fields {
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}

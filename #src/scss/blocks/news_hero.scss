@@ -53,9 +53,14 @@
         position: relative;
         z-index: 3;
         padding-top: 130px;
+        
     }
     &__body {
         height: 60vh;
+        background-image: url('../img/hero/hero-bg.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
     }
 
     &__title {
