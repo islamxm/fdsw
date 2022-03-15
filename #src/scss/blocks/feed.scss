@@ -162,13 +162,14 @@
 
         &__body {
             background-size: 100% 100%;
+            background: unset;
             padding: 25px;
 
             &_form {
                 padding-bottom: 0;
 
                 &_title {
-                    color: #fff !important;
+                    color: var(--black) !important;
                     margin-bottom: 25px;
                 }
 
@@ -183,10 +184,10 @@
                         input {
                             width: 100% !important;
                             margin-bottom: 25px;
-                            border-bottom-color: #D3D3D3 !important;
+                            border-bottom-color: var(--black) !important;
 
                             &::placeholder {
-                                color: #D3D3D3 !important;
+                                color: var(--black) !important;
                             }
                         }
                     }
@@ -209,14 +210,15 @@
                             align-items: flex-start;
 
                             .icon {
-                                width: 12px;
-                                height: 12px;
-                                border: 1px solid #D3D3D3;
+                                width: 16px;
+                                height: 16px;
+                                border: 1px solid var(--black);
                                 margin-right: 10px;
+                                flex: 0 0 auto;
                             }
 
                             .text {
-                                color: #fff;
+                                color: var(--black);
                                 font-weight: 400;
                                 font-size: 13px;
                                 line-height: 16px;
@@ -269,7 +271,10 @@
 
                     &_fields {
 
-                        
+                        input {
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
                     }
                 }
             }

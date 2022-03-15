@@ -60,12 +60,13 @@
 
             &_in {
                 padding: 70px;
-                background-color: var(--gray);
+                background-color: var(--blue);
                 width: 50%;
             }
 
             &_title {
                 margin-bottom: 18px;
+                color: #fff !important;
             }
 
             &_text {
@@ -86,13 +87,13 @@
                 margin: 0;
 
                 &_title {
-                    color: #fff;
+                    // color: #fff;
                 }
                 
 
                 &_in {
                     padding: 70px;
-                    background-color: var(--blue);
+                    
                     width: 50%;
                 }
 
@@ -198,10 +199,22 @@
         &__in {
             
             .section__title {
-                font-size: 25px;
-                line-height: 35px;
+                font-size: 20px;
+                line-height: 24px;
             }
         }
+
+        &__item {
+
+            &_body {
+                &_title {
+                    font-size: 16px !important;
+                    line-height: 20px !important;
+                }
+            }
+        }
+
+        
 
         
     }

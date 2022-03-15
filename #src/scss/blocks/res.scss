@@ -45,14 +45,34 @@
         &_btn {
             .button {
                 border-color: var(--black);
-                span {
+                .line.lineTop {
+                    //background: linear-gradient(to left, #fff,rgba(255,255,255,0));
+                    background-color: #000;
+                }
+
+                .line.lineRight {
+                    //background: linear-gradient(to top, #fff, rgba(255,255,255,0));
+                    background-color: #000;
+                }
+
+                .line.lineBottom {
+                    //background: linear-gradient(to right, #fff, rgba(255,255,255,0));
+                    background-color: #000;
+                }
+
+                .line.lineLeft {
+                    //background: linear-gradient(to bottom, #fff, rgba(255,255,255,0));
+                    background-color: #000;
+                }
+
+                .text {
                     color: var(--black);
                 }
 
                 &:hover {
                     background-color: var(--black);
 
-                    span {
+                    .text {
                         color: #fff;
                     }
 
@@ -308,6 +328,81 @@
                 .swiper-scrollbar-drag {
                     border-radius: 15px;
                     background-color: var(--blue);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .res {
+
+        &__head {
+
+            &_main {
+
+                &_ex {
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: unset;
+                }
+                &_title {
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-transform: unset;
+                }
+            }
+        }
+
+        &__body {
+
+            &_item {
+
+
+                &_head {
+
+                    .num {
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+
+                    .descr {
+
+                        &__top {
+                            font-size: 18px;
+                            line-height: 20px;
+                        }
+
+                        &__bot {
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-transform: lowercase;
+                        }
+                    }
+                }
+
+
+                &_main {
+                    &_descr {
+                        font-size: 14px;
+                        line-height: 16px;
+
+                        .title {
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+
+                        .text {
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+
+                        .link {
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
                 }
             }
         }

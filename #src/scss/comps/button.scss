@@ -1,5 +1,5 @@
 .button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 17px 33px;
@@ -113,6 +113,17 @@
         .text {
             font-size: 15px;
             line-height: 17px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+    .button {
+
+        .text {
+            font-size: 14px;
+            line-height: 16px;
         }
     }
 }

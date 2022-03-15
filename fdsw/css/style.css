@@ -66,8 +66,8 @@ body {
 }
 @media (max-width: 700px) {
   .section__title {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 .section__title.black {
@@ -83,9 +83,9 @@ body {
 }
 
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -200,6 +200,12 @@ body {
   .button .text {
     font-size: 15px;
     line-height: 17px;
+  }
+}
+@media (max-width: 650px) {
+  .button .text {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 @-webkit-keyframes lineTop {
@@ -320,7 +326,7 @@ body {
   width: 100%;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   background-color: rgba(var(--blue), 0);
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
@@ -355,6 +361,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 69px;
+  height: 69px;
 }
 .header__logo_text {
   display: none;
@@ -744,8 +752,9 @@ body {
   }
   .menu__nav_item a {
     font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
   }
   .menu__nav_item.p-0 {
     padding-left: 0;
@@ -989,6 +998,9 @@ body {
     min-height: unset;
     height: 200px;
   }
+  .hero__content {
+    padding-top: 30px;
+  }
   .hero__content_title {
     font-size: 18px;
     line-height: 22px;
@@ -1001,6 +1013,9 @@ body {
   padding: 100px 0;
   padding-top: 0;
 }
+.adv__item_body_title {
+  color: var(--gold) !important;
+}
 .adv__item_body_descr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1008,7 +1023,7 @@ body {
 }
 .adv__item_body_descr .num {
   margin-right: 22px;
-  color: var(--blue);
+  color: var(--gold) !important;
 }
 .adv__item_body_descr .text {
   max-width: 500px;
@@ -1049,7 +1064,7 @@ body {
   margin-bottom: 120px;
 }
 .adv__item.adv__item_1 .adv__item_body_descr .num {
-  color: var(--blue);
+  color: var(--gold);
   margin-right: 22px;
 }
 .adv__item.adv__item_1 .adv__item_body_img {
@@ -1084,7 +1099,7 @@ body {
   width: 100%;
   margin: 0 auto;
   min-height: 555px;
-  background-color: var(--gray);
+  background-color: var(--blue);
   padding: 70px;
   position: relative;
 }
@@ -1188,7 +1203,7 @@ body {
   max-width: 70vw;
   width: 100%;
   margin: 0 auto;
-  background-color: var(--gray);
+  background-color: var(--blue);
 }
 .adv__item.adv__item_4 .adv__item_body_title {
   margin-bottom: 40px;
@@ -1429,6 +1444,10 @@ body {
     font-size: 14px;
     line-height: 22px;
   }
+  .adv__item_body_descr .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
   .adv__item_bg {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -1439,6 +1458,12 @@ body {
     max-height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .adv__item.adv__item_1 {
+    margin-bottom: 35px;
+  }
+  .adv__item.adv__item_1 .adv__item_body_img {
+    display: none;
   }
   .adv__item.adv__item_2 {
     margin-bottom: 30px;
@@ -1513,13 +1538,25 @@ body {
 .res__head_btn .button {
   border-color: var(--black);
 }
-.res__head_btn .button span {
+.res__head_btn .button .line.lineTop {
+  background-color: #000;
+}
+.res__head_btn .button .line.lineRight {
+  background-color: #000;
+}
+.res__head_btn .button .line.lineBottom {
+  background-color: #000;
+}
+.res__head_btn .button .line.lineLeft {
+  background-color: #000;
+}
+.res__head_btn .button .text {
   color: var(--black);
 }
 .res__head_btn .button:hover {
   background-color: var(--black);
 }
-.res__head_btn .button:hover span {
+.res__head_btn .button:hover .text {
   color: #fff;
 }
 .res__head_btn .button:hover .icon svg path {
@@ -1705,6 +1742,47 @@ body {
   .res__body_scrollbar .swiper-scrollbar-drag {
     border-radius: 15px;
     background-color: var(--blue);
+  }
+}
+@media (max-width: 700px) {
+  .res__head_main_ex {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: unset;
+  }
+  .res__head_main_title {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: unset;
+  }
+  .res__body_item_head .num {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .res__body_item_head .descr__top {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .res__body_item_head .descr__bot {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: lowercase;
+  }
+  .res__body_item_main_descr {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .res__body_item_main_descr .title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .res__body_item_main_descr .text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .res__body_item_main_descr .link {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 .last {
@@ -2117,11 +2195,12 @@ body {
 }
 .ct__item_body_in {
   padding: 70px;
-  background-color: var(--gray);
+  background-color: var(--blue);
   width: 50%;
 }
 .ct__item_body_title {
   margin-bottom: 18px;
+  color: #fff !important;
 }
 .ct__item_body_text {
   color: #fff;
@@ -2139,12 +2218,8 @@ body {
   max-width: unset;
   margin: 0;
 }
-.ct__item:nth-child(odd) .ct__item_body_title {
-  color: #fff;
-}
 .ct__item:nth-child(odd) .ct__item_body_in {
   padding: 70px;
-  background-color: var(--blue);
   width: 50%;
 }
 .ct__item:nth-child(odd) .ct__item_body_title {
@@ -2207,8 +2282,12 @@ body {
 }
 @media (max-width: 700px) {
   .ct__in .section__title {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .ct__item_body_title {
+    font-size: 16px !important;
+    line-height: 20px !important;
   }
 }
 .comp__wrap {
@@ -2314,6 +2393,10 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .comp__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .comp__item_img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2687,6 +2770,9 @@ body {
   font-size: 12px;
   line-height: 15px;
 }
+.news_hero__back .icon {
+  margin-right: 10px;
+}
 .news_hero__bg {
   position: absolute;
   top: 0;
@@ -2879,23 +2965,23 @@ body {
 }
 @media (max-width: 650px) {
   .contacts__body_descr .adress__main {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .contacts__body_descr .adress__ex {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
   }
   .contacts__body_descr .item__tel {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
   }
   .contacts__body_descr .item__mail {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
   }
   .contacts__body_descr .tm {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
   }
   .contacts__body_img {
@@ -3321,13 +3407,14 @@ body {
   }
   .feed__body {
     background-size: 100% 100%;
+    background: unset;
     padding: 25px;
   }
   .feed__body_form {
     padding-bottom: 0;
   }
   .feed__body_form_title {
-    color: #fff !important;
+    color: var(--black) !important;
     margin-bottom: 25px;
   }
   .feed__body_form_row {
@@ -3343,22 +3430,22 @@ body {
   .feed__body_form_row_fields input {
     width: 100% !important;
     margin-bottom: 25px;
-    border-bottom-color: #D3D3D3 !important;
+    border-bottom-color: var(--black) !important;
   }
   .feed__body_form_row_fields input::-webkit-input-placeholder {
-    color: #D3D3D3 !important;
+    color: var(--black) !important;
   }
   .feed__body_form_row_fields input::-moz-placeholder {
-    color: #D3D3D3 !important;
+    color: var(--black) !important;
   }
   .feed__body_form_row_fields input:-ms-input-placeholder {
-    color: #D3D3D3 !important;
+    color: var(--black) !important;
   }
   .feed__body_form_row_fields input::-ms-input-placeholder {
-    color: #D3D3D3 !important;
+    color: var(--black) !important;
   }
   .feed__body_form_row_fields input::placeholder {
-    color: #D3D3D3 !important;
+    color: var(--black) !important;
   }
   .feed__body_form_row_ch {
     display: block;
@@ -3381,13 +3468,16 @@ body {
             align-items: flex-start;
   }
   .feed__body_form_row_ch label .icon {
-    width: 12px;
-    height: 12px;
-    border: 1px solid #D3D3D3;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--black);
     margin-right: 10px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   .feed__body_form_row_ch label .text {
-    color: #fff;
+    color: var(--black);
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -3413,5 +3503,9 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 33px;
+  }
+  .feed__body_form_row_fields input {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
