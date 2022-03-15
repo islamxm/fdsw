@@ -135,6 +135,8 @@
                 flex-wrap: nowrap;
             }
 
+            
+
             &_item.w-30 {
                 width: unset;
                 margin-right: 0;
@@ -151,6 +153,17 @@
 
             &_item {
                margin-bottom: 0;
+
+               .item {
+
+                &__content {
+
+                    &_name {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+               }
             }
         }
     }
@@ -174,6 +187,10 @@
                         padding: 10px 15px;
                         font-size: 10px;
                         line-height: 13px;
+                    }
+
+                    &__content {
+                        padding: 10px;
                     }
                 }
             }
