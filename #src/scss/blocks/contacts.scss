@@ -29,7 +29,7 @@
                 margin-bottom: 30px;
 
                 &__main {
-                    color: var(--blue);
+                    // color: var(--blue);
                     font-weight: 700;
                     font-size: 30px;
                     line-height: 40px;
@@ -91,6 +91,8 @@
             &_img {
                 display: none;
             }
+
+            
         }
     }
 }
@@ -100,40 +102,47 @@
 
     .contacts {
 
+
+        &__in {
+            padding: 50px 0 20px 0;
+        }
         &__body {
 
             &_descr {
                 
 
                 .adress {
-
+                    margin-bottom: 0;
                     &__main {
-                        font-size: 14px;
-                        line-height: 20px;
+                        font-size: 13px;
+                        line-height: 17px;
+                        margin-bottom: 10px;
                     }
 
                     &__ex {
-                        font-size: 14px;
-                        line-height: 20px;
+                        font-size: 13px;
+                        line-height: 17px;
+                        margin-bottom: 10px;
                     }
                 }
 
                 .item {
-
+                    margin-bottom: 10px;
                     &__tel {
-                        font-size: 14px;
-                        line-height: 20px;
+                        font-size: 13px;
+                        line-height: 17px;
                     }
 
                     &__mail {
-                        font-size: 14px;
-                        line-height: 20px;
+                        font-size: 13px;
+                        line-height: 17px;
                     }
                 }
 
                 .tm {
                     font-size: 14px;
                     line-height: 20px;
+                    margin-bottom: 10px;
                 }
             }
 

@@ -92,8 +92,53 @@
                     margin-left: 120px;
                     button {
                         padding: 17px 83px;
-                        background-color: var(--blue);
-                        color: #fff;
+                        // background-color: var(--blue);
+                        
+                        .text {
+                            color: var(--blue);
+                        }
+
+
+                        .line.lineTop { 
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 1px;
+                            background: linear-gradient(to left,#3F5076,#fff);
+                            
+                            animation: 4s lineTop linear infinite;
+                    
+                        }
+                    
+                        .line.lineRight {
+                            top: 0;
+                            right: 0;
+                            width: 1px;
+                            height: 100%;
+                            background: linear-gradient(to top,#3F5076,#fff);
+                    
+                            animation: 4s lineRight linear -2s infinite;
+                        }
+                    
+                        .line.lineBottom {
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 1px;
+                            background: linear-gradient(to right,#3F5076,#fff);
+                    
+                            animation: 4s lineBottom linear infinite;
+                        }
+                    
+                        .line.lineLeft {
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 1px;
+                            background: linear-gradient(to bottom,#3F5076,#fff);
+                    
+                            animation: 4s lineLeft linear -2s infinite;
+                        }
                     }
                 }
             }
@@ -189,6 +234,10 @@
                             &::placeholder {
                                 color: var(--black) !important;
                             }
+
+                            &:last-child {
+                                color: var(--black);
+                            }
                         }
                     }
 
@@ -240,6 +289,15 @@
 
                         button {
                             width: 100%;
+
+                            &:hover {
+
+                                background-color: var(--blue);
+
+                                .text {
+                                    color: #fff;
+                                }
+                            }
                         }
                     }
                 }
@@ -258,7 +316,7 @@
     .feed {
 
         &__body {
-
+            padding:    25px 15px;
             &_form {
                 &_title {
                     width: 100%;
