@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        @@include('./blocks/header.html')
+        
+        <main class="main">
+            <section class="news_hero">
+                
+                @@include('./blocks/menu.html')
+                <div class="news_hero__bg">
+                    <picture>
+                        <source srcset="" type="image/webp">
+                        <img src="./img/hero/hero-pic-3.png" alt="">
+                    </picture>
+                </div>
+
+                <div class="news_hero__wrap">
+                    <div class="news_hero__in">
+                        <div class="news_hero__back">
+                            <a href="#">
+                                <div class="icon">
+                                    <img src="./img/icons/back.svg" alt="">
+                                </div>
+                                <span>Назад</span>
+                                
+                            </a>
+                        </div>
+                        @@include('./blocks/bc.html')
+                        <div class="news_hero__body">
+                            <h1 class="news_hero__title">
+                                ГАЛЛЕРЕЯ
+                            </h1>
+                            <!-- <div class="news_hero__date">
+                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. 
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('./blocks/bc.html')
+            <section class="news gallery">
+                <div class="news__wrap">
+                    <div class="news__in">
+                        <!-- <h2 class="news__title section__title black">
+                            Новости
+                        </h2> -->
+
+                        <div class="news__list gallery__list">
+                            <div class="news__list_wr gallery__list_wr">
+                                <div class="news__list_item w-50">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <picture>
+                                                <source srcset="" type="image/webp">
+                                                <img src="./img/news/news-img.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news__list_item w-50">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <picture>
+                                                <source srcset="" type="image/webp">
+                                                <img src="./img/news/news-img.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news__list_item w-30">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <picture>
+                                                <source srcset="" type="image/webp">
+                                                <img src="./img/news/news-img.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news__list_item w-30">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <picture>
+                                                <source srcset="" type="image/webp">
+                                                <img src="./img/news/news-img.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news__list_item w-30">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <picture>
+                                                <source srcset="" type="image/webp">
+                                                <img src="./img/news/news-img.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news__list_item w-100">
+                                    <div class="item">
+                                        <div class="item__img">
+                                            <picture>
+                                                <source srcset="" type="image/webp">
+                                                <img src="./img/news/news-img.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="gallery__nav">
+                            <div class="gallery__nav_wr">
+                                <a href="#" class="gallery__nav_btn gallery__nav_btn_prev">НАЗАД</a>
+                                <div class="gallery__nav_list">
+                                    <a href="#" class="gallery__nav_item">1</a>
+                                    <a href="#" class="gallery__nav_item">2</a>
+                                    <a href="#" class="gallery__nav_item">3</a>
+                                </div>
+                                <a href="#" class="gallery__nav_btn gallery__nav_btn_next">ВПЕРЕД</a>
+                            </div>
+                        </div>
+
+                        <form class="gallery__form">
+                            <h2 class="gallery__form_title">
+                                Хотите работать с нами?
+                            </h2>
+                            <div class="gallery__form_row">
+                                <input type="text" placeholder="Имя">
+                                <input type="text" placeholder="Email">
+                                <input type="text" placeholder="Телефон">
+                            </div>
+                            <div class="gallery__form_row">
+                                <textarea placeholder="Ч то нам стоит знать?"></textarea>
+                            </div>
+
+                            <div class="gallery__form_ch">
+                                <input type="checkbox" id="g1">
+                                <label for="g1">
+                                    <div class="icon"></div>
+                                    <div class="text">
+                                        Подтверждаю согласие на обработку персональных данных
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="gallery__form_btn">
+                                <button>Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            
+           
+
+            
+        </main>
+        <!-- footer -->
+        @@include('./blocks/footer.html')
+    </div>
+    <script defer src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/bundle.js"></script>
+</body>
+</html>

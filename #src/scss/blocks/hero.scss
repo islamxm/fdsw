@@ -103,6 +103,16 @@
         border-radius: 10px;
         overflow: hidden;
 
+        iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            
+        }
+
         &_play {
             position: absolute;
             top: calc(50% - (99px / 2));
@@ -110,6 +120,7 @@
             z-index: 5;
             cursor: pointer;
             @include def_anim;
+            z-index: 5; 
 
             &:hover {
                 transform: scale(1.1);
@@ -119,6 +130,8 @@
         &_pl {
             width: 100%;
             height: 100%;
+            position: relative;
+            z-index: 4;
 
             img {
                 

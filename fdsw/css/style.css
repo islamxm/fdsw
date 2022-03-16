@@ -617,7 +617,7 @@ body {
   transition: all 0.7s ease-in-out;
 }
 .menu__nav {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-left: 100px;
   height: 100%;
   position: relative;
@@ -727,14 +727,11 @@ body {
   .menu__nav_soc_item {
     display: block;
     margin-bottom: 25px;
-    width: 37px;
-    height: 37px;
-  }
-  .menu__nav_soc_item img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fff;
   }
   .menu__nav_vd {
     display: none;
@@ -894,6 +891,14 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
+.hero__video iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .hero__video_play {
   position: absolute;
   top: calc(50% - 49.5px);
@@ -903,6 +908,7 @@ body {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 5;
 }
 .hero__video_play:hover {
   -webkit-transform: scale(1.1);
@@ -912,6 +918,8 @@ body {
 .hero__video_pl {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 4;
 }
 .hero__video_pl img {
   width: 100%;
@@ -2034,7 +2042,7 @@ body {
   margin-bottom: 10px;
 }
 .footer__top_soc_list a:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 .footer__bot {
   display: -webkit-box;
@@ -3507,5 +3515,215 @@ body {
   .feed__body_form_row_fields input {
     font-size: 14px;
     line-height: 18px;
+  }
+}
+.gallery__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 77px;
+}
+.gallery__nav_wr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #C4C4C4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gallery__nav_btn {
+  padding: 20px 30px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery__nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #C4C4C4;
+  border-right: 1px solid #C4C4C4;
+}
+.gallery__nav_item {
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery__form_title {
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.gallery__form_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+.gallery__form_row:last-child {
+  margin-bottom: 0;
+}
+.gallery__form_row input {
+  width: 32%;
+  display: block;
+  border-bottom: 1px solid #C4C4C4;
+  font-size: 20px;
+  line-height: 33px;
+  padding: 5px;
+}
+.gallery__form_row textarea {
+  width: 100%;
+  display: block;
+  resize: none;
+  border-bottom: 1px solid #C4C4C4;
+  font-size: 20px;
+  line-height: 33px;
+  padding: 5px;
+}
+.gallery__form_ch {
+  margin-bottom: 30px;
+}
+.gallery__form_ch input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+.gallery__form_ch label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.gallery__form_ch label .icon {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #C4C4C4;
+  margin-right: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.gallery__form_ch label .text {
+  font-size: 13px;
+  line-height: 16px;
+}
+.gallery__form_ch input:checked ~ label .icon {
+  border-color: var(--blue);
+  background-color: var(--blue);
+}
+.gallery__form_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.gallery__form_btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 17px 80px;
+  background-color: var(--blue);
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .gallery__list_wr {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .gallery__list .news__list_item {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery__list .news__list_item {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .gallery__nav_item {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px;
+  }
+  .gallery__nav_btn {
+    padding: 15px;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px 25px;
+  }
+  .gallery__form_title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .gallery__form_row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gallery__form_row input {
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .gallery__form_row textarea {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .gallery__form_btn button {
+    width: 100%;
   }
 }

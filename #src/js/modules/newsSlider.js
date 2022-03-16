@@ -1,9 +1,9 @@
 import Swiper, {Scrollbar} from 'swiper';
 
 export const newsSlider = () => {
-    const el = document.querySelector('.news__list');
-    const wrapper = document.querySelector('.news__list_wr');
-    const slide = document.querySelectorAll('.news__list_item');
+    const el = document.querySelector('#newsList');
+    const wrapper = document.querySelector('#newsListWr');
+    const slide = document.querySelectorAll('.nwItem');
 
 
     if(el) {

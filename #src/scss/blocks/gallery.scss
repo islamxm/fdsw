@@ -1,0 +1,247 @@
+.gallery {
+
+
+    &__list {
+
+        &_wr {
+
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 77px;
+
+        &_wr {
+            display: flex;
+            border: 1px solid #C4C4C4;
+            align-items: center;
+        }
+
+        &_btn {
+            padding: 20px 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_btn.gallery__nav_btn_prev {
+
+        }
+
+        &_btn.gallery__nav_btn_next {
+
+        }
+
+        &_list {
+            display: flex;
+            align-items: center;
+            border-left: 1px solid #C4C4C4;
+            border-right: 1px solid #C4C4C4;
+        }
+
+        &_item {
+            padding: 20px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__form {
+
+        &_title {
+            font-size: 30px;
+            line-height: 35px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        &_row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            input {
+                width: 32%;
+                display: block;
+                border-bottom: 1px solid #C4C4C4;
+                font-size: 20px;
+                line-height: 33px;
+                padding: 5px;
+            }
+
+            textarea {
+                width: 100%;
+                display: block;
+                resize: none;
+                border-bottom: 1px solid #C4C4C4;
+                font-size: 20px;
+                line-height: 33px;
+                padding: 5px;
+            }
+        }
+
+        &_ch {
+            margin-bottom: 30px;
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                z-index: -1;
+                pointer-events: none;
+            }
+
+            label {
+                display: flex;
+                align-items: flex-start;
+
+                .icon {
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #C4C4C4;
+                    margin-right: 15px;
+                    flex: 0 0 auto;
+
+                }
+
+                .text {
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+
+            input:checked ~ label {
+
+                .icon {
+                    border-color: var(--blue);
+                    background-color: var(--blue);
+                }
+            }
+        }
+
+        &_btn {
+
+            display: flex;
+            justify-content: flex-start;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 17px 80px;
+                background-color: var(--blue);
+                color: #fff;
+                font-size: 20px;
+                line-height: 20px;
+                cursor: pointer;
+            }
+        }
+
+        
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .gallery {
+
+        &__list {
+
+            &_wr {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .news__list_item {
+                width: 48%;
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .gallery {
+
+        &__list {
+
+            &_wr {
+
+            }
+            .news__list_item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .gallery {
+
+        &__nav {
+
+            &_list {
+
+            }
+
+            &_item {
+                font-size: 13px;
+                line-height: 15px;
+                padding: 15px;
+            }
+            &_btn {
+                padding: 15px;
+                font-size: 13px;
+                line-height: 15px;
+                padding: 15px 25px;
+            }
+        }
+
+        &__form {
+
+            &_title {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            &_row {
+                flex-wrap: wrap;
+
+                input {
+                    font-size: 14px;
+                    line-height: 16px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                textarea {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+
+            &_btn {
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
