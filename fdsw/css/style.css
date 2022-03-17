@@ -2541,6 +2541,7 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 .news__list_item .item:hover::after {
   height: 70%;
@@ -3680,6 +3681,9 @@ body {
     font-size: 14px;
     line-height: 18px;
   }
+}
+.gallery .news__list_item .item::after {
+  display: none !important;
 }
 .gallery__nav {
   display: -webkit-box;

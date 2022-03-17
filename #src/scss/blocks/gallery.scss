@@ -6,6 +6,19 @@
         &_wr {
 
         }
+
+        
+    }
+
+
+    .news__list_item {
+
+        .item {
+
+            &::after {
+                display: none !important;
+            }
+        }
     }
 
     &__nav {
