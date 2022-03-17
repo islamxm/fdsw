@@ -2543,7 +2543,8 @@ body {
   overflow: hidden;
 }
 .news__list_item .item:hover::after {
-  background-color: rgba(181, 156, 103, 0);
+  height: 70%;
+  background-color: #b59c67;
 }
 .news__list_item .item:after {
   position: absolute;
