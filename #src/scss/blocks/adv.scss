@@ -587,7 +587,7 @@
 
                     .text {
                         font-size: 14px;
-                        line-height: 18px;
+                        line-height: 20px;
                     }
                 }
             }
@@ -600,6 +600,17 @@
                     max-width: 100%;
                     max-height: 100%;
                     object-fit: cover;
+                }
+            }
+        }
+
+
+        &__item {
+
+            &_body {
+
+                &_title {
+                    font-size: 18px;
                 }
             }
         }

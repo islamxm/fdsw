@@ -67,6 +67,11 @@
 
         &_btn {
             margin-bottom: 40px;
+
+            a {
+                padding-top: 17px;
+                padding-bottom: 17px;
+            }
         }
 
         &_scroll {
@@ -197,7 +202,7 @@
 
             &_descr {
                 font-size: 16px;
-                line-height: 18px;
+                line-height: 20px;
             }
         }
     }
@@ -276,6 +281,12 @@
 
                 span {
                     display: block;
+                }
+            }
+
+            &_btn {
+                a {
+                    width: 100%;
                 }
             }
 

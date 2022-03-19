@@ -6,6 +6,7 @@ import { newsSlider } from './modules/newsSlider';
 import { scrolldown } from './modules/scrolldown';
 import { tabs } from './modules/tabs';
 import { ytHero } from './modules/ytHero';
+import { gallery } from './modules/gallery';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -44,10 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
     
-    
-    
-
-
     header();
     menu();
     scrolldown();
@@ -56,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     newsSlider();
     tabs();
     ytHero();
+    gallery();
     
 })
 

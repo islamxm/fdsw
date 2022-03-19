@@ -13,6 +13,15 @@
     
 </head>
 <body>
+    <div class="preloader">
+    <div class="preloader__status">
+        <div status class="preloader__status-text">I'm {{loaded}} % done!</div>
+        <div class="preloader__status-loader">
+            <div loader :style="loadStyle" class="preloader__status-bar"></div>
+        </div>
+    </div>
+</div>
+
     <div class="wrapper">
         <!-- header -->
         <div class="header">
@@ -261,7 +270,7 @@
                     <div class="res__in">
                         <div class="res__head">
                             <div class="res__head_main">
-                                <div class="res__head_main_ex">
+                                <div class=" section__title">
                                     последние
                                     результаты 
                                 </div>
@@ -314,7 +323,7 @@
                                             <div class="text">
                                                 пример текста
                                             </div>
-                                            <a href="#" class="link">Подробнее</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -342,7 +351,7 @@
                                             <div class="text">
                                                 пример текста
                                             </div>
-                                            <a href="#" class="link">Подробнее</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -370,7 +379,7 @@
                                             <div class="text">
                                                 пример текста
                                             </div>
-                                            <a href="#" class="link">Подробнее</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -449,7 +458,7 @@
                             </picture>
                         </a>
                         <div class="footer__top_first_head_title">
-                            Состав федерации дзюдо Северо-Запада
+                            Федерации дзюдо Северо-Запада
                         </div>
                     </div>
                     

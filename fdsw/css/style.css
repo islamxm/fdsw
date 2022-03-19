@@ -66,7 +66,7 @@ body {
 }
 @media (max-width: 700px) {
   .section__title {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
   }
 }
@@ -80,6 +80,57 @@ body {
 
 .section__title.white {
   color: #fff;
+}
+
+.preloader {
+  width: 100%;
+  height: 100vh;
+  background: #3498db;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+.preloader__status {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.preloader__status-text {
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+.preloader__status-loader {
+  width: 100%;
+  height: 3px;
+}
+.preloader__status-bar {
+  background: white;
+  height: 100%;
 }
 
 .button {
@@ -888,6 +939,10 @@ body {
 .hero__content_btn {
   margin-bottom: 40px;
 }
+.hero__content_btn a {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
 .hero__content_scroll {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1002,7 +1057,7 @@ body {
   }
   .hero__content_descr {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
   }
 }
 @media (max-width: 1000px) {
@@ -1064,6 +1119,9 @@ body {
   }
   .hero__content_title span {
     display: block;
+  }
+  .hero__content_btn a {
+    width: 100%;
   }
   .hero__content_descr {
     font-size: 14px;
@@ -1506,7 +1564,7 @@ body {
   }
   .adv__item_body_descr .text {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
   }
   .adv__item_bg {
     -webkit-box-ordinal-group: 3;
@@ -1518,6 +1576,9 @@ body {
     max-height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .adv__item_body_title {
+    font-size: 18px;
   }
   .adv__item.adv__item_1 {
     margin-bottom: 35px;
@@ -1766,9 +1827,8 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .res__head_main_ex {
-    width: 100%;
-    margin-bottom: 10px;
+  .res__head_main .section__title {
+    margin-bottom: 40px;
   }
   .res__head_main_title {
     width: 100%;
@@ -1805,10 +1865,8 @@ body {
   }
 }
 @media (max-width: 700px) {
-  .res__head_main_ex {
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: unset;
+  .res__head_main .section__title {
+    font-size: 18px;
   }
   .res__head_main_title {
     font-size: 14px;
@@ -2363,9 +2421,21 @@ body {
     font-size: 20px;
     line-height: 24px;
   }
+  .ct__sub {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ct__item_body {
+    width: 85vw !important;
+    left: calc(50% - 42.5vw) !important;
+    height: auto !important;
+  }
   .ct__item_body_title {
-    font-size: 16px !important;
+    font-size: 14px !important;
     line-height: 20px !important;
+  }
+  .ct__item_body_text {
+    font-size: 14px;
   }
   .ct__item_body_in {
     width: 100% !important;
@@ -2480,6 +2550,11 @@ body {
     font-size: 18px;
     line-height: 22px;
   }
+  .comp__item_name {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+  }
   .comp__item_img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2487,6 +2562,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .comp__item_text {
+    text-align: center;
+  }
+  .comp__item_auth {
+    text-align: center;
   }
 }
 .news__wrap {
@@ -3022,7 +3103,6 @@ body {
   margin-bottom: 30px;
 }
 .contacts__body_descr .adress__main {
-  font-weight: 700;
   font-size: 30px;
   line-height: 40px;
 }
@@ -3075,12 +3155,12 @@ body {
     margin-bottom: 0;
   }
   .contacts__body_descr .adress__main {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 17px;
     margin-bottom: 10px;
   }
   .contacts__body_descr .adress__ex {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 17px;
     margin-bottom: 10px;
   }
@@ -3088,11 +3168,11 @@ body {
     margin-bottom: 10px;
   }
   .contacts__body_descr .item__tel {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 17px;
   }
   .contacts__body_descr .item__mail {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 17px;
   }
   .contacts__body_descr .tm {
@@ -3676,6 +3756,10 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 33px;
+  }
+  .feed__body_form_title .st {
+    font-size: 18px;
+    line-height: 22px;
   }
   .feed__body_form_row_fields input {
     font-size: 14px;

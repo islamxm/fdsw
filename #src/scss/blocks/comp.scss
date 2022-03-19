@@ -131,9 +131,22 @@
 
         &__item {
 
+            &_name {
+                text-align: center;
+                font-size: 14px;
+                line-height: 20px;
+            }
             &_img {
                 display: flex;
                 justify-content: center;
+            }
+
+            &_text {
+                text-align: center;
+            }
+
+            &_auth {
+                text-align: center;
             }
         }
     }
