@@ -7,7 +7,6 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 15px;
-
         .icon {
             margin-right: 10px;
         }
@@ -61,6 +60,9 @@
     }
     &__body {
         height: 60vh;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         background-image: url('../img/hero/hero-bg.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -91,6 +93,9 @@
 @media (max-width: 1000px) {
 
     .news_hero {
+        height: unset;
+        overflow: hidden;
+        position: relative;
 
         &__back {
             display: flex;
@@ -121,6 +126,10 @@
 
         &__in {
 
+        }
+
+        &__body {
+            height: unset;
         }
     }
 }

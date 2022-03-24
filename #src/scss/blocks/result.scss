@@ -64,6 +64,35 @@
                     margin-bottom: 20px;
                 }
 
+                .download {
+                    margin-bottom: 15px;
+
+                    .button {
+
+                        .line.lineTop {
+                            background: linear-gradient(to left,rgba(0,0,0, 1),#fff) !important;
+                        }
+
+                        .line.lineRight {
+                            background: linear-gradient(to top,rgba(0,0,0, 1),#fff);
+                        }
+
+                        .line.lineBottom {
+                            background: linear-gradient(to right,rgba(0,0,0, 1),#fff);
+                        }
+
+                        .line.lineLeft {
+                            background: linear-gradient(to bottom,rgba(0,0,0, 1),#fff);
+                        }
+
+                        .text {
+                            color: #000;
+
+                            
+                        }
+                    }
+                }
+
                 .table {
                     width: 100%;
                     &__in {
@@ -184,7 +213,7 @@
                     font-size: 16px;
                     line-height: 26px;
                     margin-bottom: 1px;
-                    max-width: 234px;
+                    // max-width: 234px;
                     color: #fff;
                 }
 
@@ -297,6 +326,26 @@
 
                     &_head {
                         margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .result {
+
+        &__aside {
+
+            &_list {
+                &_item {
+
+                    &_name {
+                        font-size: 13px;
+                        line-height: 16px;
                     }
                 }
             }
